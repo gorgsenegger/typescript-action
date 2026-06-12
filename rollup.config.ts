@@ -6,6 +6,7 @@ import typescript from '@rollup/plugin-typescript'
 
 const config = {
   input: 'src/index.ts',
+  external: ['@actions/core'],
   output: {
     esModule: true,
     file: 'dist/index.js',
